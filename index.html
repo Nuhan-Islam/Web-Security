@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Analyze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Banner-->
+    <div class="banner">
+        <header>
+            <a href="#" class="logo">GRP 71</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="bg.jpg" alt="">
+        <div class="content">
+            <h2>Check Malicious Website</h2>
+            <!--Serch Bar-->
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search" id="My Search">
+                </div>
+                <span class="clear" onclick="document.getElementById ('My Search').value='' "></span>
+            </div>
+            <br />
+            <div id="data">
+                <p class="result">Result : <span id="result"></span></p>
+            </div>
+            <script>
+                const icon = document.querySelector('.icon');
+                const search = document.querySelector('.search');
+                icon.onclick = function () {
+                    search.classList.toggle('active');
+                };
+                const addInput = document.querySelector('.input');
+                addInput.addEventListener('keyup', (event) => {
+                    if (event.which === 13) { getVal();}
+                    });
+            </script>
+            <script src="index.js"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+                integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+            ></script>
+        </div>
+    </div>
+    <!--About-->
+    <section class="about">
+        <div class="contentBx">
+            <h2 class="heading">About Us</h2>
+            <p class="text">The project is a web-based detection tool for malicious websites. Websites are evaluated against web analytics in the background in real time. Visits, Page Per Visit, Time On Site, and Bounce Rate are examples of these metrics.</p>
+        </div>
+        <div class="imgBx"></div>
+    </section>
+    <!--Services-->
+    <section class="services">
+        <h2 class="heading">Our Services</h2>
+        <p class="text">We are using a variety of approaches to provide network security to our clients. Our main objective is to protect users from harmful websites.</p>
+        <div class="container">
+            <div class="serviceBx">
+                <div>
+                    <img src="icon1.png" alt="">
+                    <h2>Design</h2>
+                </div>
+            </div>
+            <div class="serviceBx">
+                <div>
+                    <img src="icon2.png" alt="">
+                    <h2>Development</h2>
+                </div>
+            </div>
+            <div class="serviceBx">
+                <div>
+                    <img src="icon3.png" alt="">
+                    <h2>Branding</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Technology-->
+    <section class="technology">
+        <div class="contentBx">
+            <h2 class="heading">Edge Technology</h2>
+            <p class="text">The API receives data from the user via the website's search bar. Then, in the back end, it performs an analysis of various data and generates a report for that website. It then makes a determination as to whether the requested site is safe or harmful.</p>
+        </div>
+        <div class="imgBx">
+            <img src="tech.png" alt="">
+        </div>
+    </section>
+     <!--Client-->
+     <section class="client">
+        <h2 class="heading">Our Media Portal</h2>
+        <p class="text"></p>
+        <div class="imgBx">
+            <img src="brand1.png" alt="">
+            <img src="brand2.png" alt="">
+            <img src="brand3.png" alt="">
+            <img src="brand4.png" alt="">
+        </div>
+    </section>
+
+    <!--Testimonials-->
+    <section class="testimonials">
+        <h2 class="heading">Client Experience</h2>
+        <div class="container">
+            <div class="contentBx">
+                <div>
+                    <p>Opinion</p><br>
+                    <h3>Anonymous User</h3>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div>
+                    <p>Opinion</p><br>
+                    <h3>Anonymous User</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section class="contact">
+        <h2 class="heading">Contact Us</h2>
+        <p class="text"></p>
+    </section>
+
+    <section class="about">
+        <div class="contentBx redbg">
+            <div class="form">
+                <div class="inputBx">
+                    <input type="text" name="" placeholder="Full Name">
+                </div>
+                <div class="inputBx">
+                    <input type="text" name="" placeholder="Email Address">
+                </div>
+                <div class="inputBx">
+                    <input type="text" name="" placeholder="Mobile No.">
+                </div>
+                <div class="inputBx">
+                    <textarea placeholder="Write Your message here"></textarea>
+                </div>
+                <div class="inputBx">
+                    <input type="submit" name="" value="send">
+                </div>
+                
+            </div>
+        </div>
+        <div class="imgBx2"></div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <p class="text">Design & Development By Nuhan Islam</p>
+        <ul>
+            <p class="text">Follow us on : </p>
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="linkedin.png"></a></li>
+        </ul>
+    </section>
+
+    <!--practice code-->
+    <section class="footer">
+        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit molestias, quae earum voluptatem amet delectus. Id corrupti dolores obcaecati similique numquam nemo quam, sint illo quae veniam recusandae eligendi.</p>
+        <li><a href="#"><img src="fish.png" alt=""></a></li>
+        <li><a href="#"><img src="bird.png" alt=""></a></li>
+        <li><a href="#"><img src="cat.png" alt=""></a></li>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, voluptas exercitationem. At nostrum ut libero ab odio natus ducimus tempore, repudiandae eligendi id temporibus itaque molestias? Quia, ea totam. Eum.</p>
+    </section>
+
+    
+</body>
+</html>
